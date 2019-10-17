@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "diplomas",
+  "info": {
+    "name": "diploma",
+    "description": "Dilpma I've got"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "certification_date": {
+      "type": "date"
+    },
+    "certificate": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "organisme": {
+      "group": "compagnie",
+      "required": true,
+      "type": "group"
+    },
+    "Option": {
+      "type": "string"
+    }
+  }
+}

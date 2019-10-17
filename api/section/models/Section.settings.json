@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "sections",
+  "info": {
+    "name": "section",
+    "description": "Section Listing"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "menu": {
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project"
+    },
+    "diplomas": {
+      "collection": "diploma"
+    },
+    "experiences": {
+      "collection": "experience"
+    }
+  }
+}

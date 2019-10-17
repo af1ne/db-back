@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/diplomas",
+      "handler": "Diploma.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diplomas/count",
+      "handler": "Diploma.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/diplomas/:id",
+      "handler": "Diploma.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/diplomas",
+      "handler": "Diploma.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/diplomas/:id",
+      "handler": "Diploma.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/diplomas/:id",
+      "handler": "Diploma.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

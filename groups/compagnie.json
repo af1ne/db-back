@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "compagnie",
+    "description": "Compagnie listing"
+  },
+  "connection": "default",
+  "collectionName": "groups_compagnies",
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

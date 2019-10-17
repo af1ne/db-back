@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "experiences",
+  "info": {
+    "name": "experience",
+    "description": "Experience listing"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "job_title": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "compagnie": {
+      "group": "compagnie",
+      "required": true,
+      "type": "group"
+    }
+  }
+}
